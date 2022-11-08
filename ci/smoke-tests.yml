@@ -99,6 +99,7 @@ groups:
     - spring-kafka
     - spring-kafka-avro
     - spring-kafka-streams
+    - spring-pulsar
   - name: security
     smoke_tests:
     - ldap-odm
