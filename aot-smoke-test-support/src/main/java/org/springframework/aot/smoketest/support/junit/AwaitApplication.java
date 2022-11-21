@@ -37,7 +37,7 @@ class AwaitApplication implements BeforeAllCallback {
 	@Override
 	public void beforeAll(ExtensionContext context) throws Exception {
 		Output output = Output.current();
-		long end = System.currentTimeMillis() + 10000;
+		long end = System.currentTimeMillis() + 30000;
 		List<String> lines = null;
 		while (System.currentTimeMillis() < end) {
 			lines = output.lines();

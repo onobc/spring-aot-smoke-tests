@@ -1,0 +1,6 @@
+spring:
+  pulsar:
+    client:
+      service-url: pulsar://localhost:${PULSAR_PORT_6650:6650}
+    administration:
+      service-url: http://localhost:${PULSAR_PORT_8080:8080}
