@@ -7,8 +7,11 @@ Unit tests are processed ahead of time and are then either run on the JVM or as 
 Unit tests can be run on the JVM using the `test` task and as a native executable using the `nativeTest` task.
 
 Application tests are always executed on the JVM against an application that's running on the JVM or as a native executable.
-The `appTest` task tests the application running on the JVM. The `nativeAppTest` task tests the application running as a native executable.
+The `appTest` task tests the application running on the JVM.The `nativeAppTest` task tests the application running as a native executable.
 
+== Contributing
+
+Please read and follow the link:CONTRIBUTING.adoc[contributing guide].
 
 == How to
 
@@ -47,11 +50,11 @@ for example
 ./gradlew :boot:actuator-webmvc:appTest
 ----
 
-=== Add a new sample
+=== Add a new smoke test
 
-1. Create a new directory for your sample
+1. Create a new directory for your smoke test in the appropriate group
 2. Include the directory in `settings.gradle`
-3. Include the directory in `ci/smoke-tests.yaml`
+3. Run `./gradlew updateInfrastructure` to add the smoke test to the status page and CI pipeline
 
 === Test against local changes
 
